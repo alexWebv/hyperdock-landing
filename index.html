@@ -3,14 +3,85 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>HyperDock</title>
+
+    <!-- Primary SEO -->
+    <title>HyperDock — Voice-Powered Terminal for Developers</title>
+    <meta name="description" content="HyperDock is a neon-styled, voice-powered terminal for developers. Speak commands, control Git, manage projects, favorites and history, with inline AI chat. macOS & Windows.">
+
+    <!-- Canonical / hreflang (Project Pages URL) -->
+    <link rel="canonical" href="https://alexwebv.github.io/hyperdock-landing/">
+    <link rel="alternate" href="https://alexwebv.github.io/hyperdock-landing/" hreflang="en">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HyperDock — Voice-Powered Terminal for Developers">
+    <meta property="og:description" content="Speak commands. Run tasks. Stay in flow. Neon UI, voice Git, AI chat, favorites & history. macOS & Windows.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alexwebv.github.io/hyperdock-landing/">
+    <meta property="og:image" content="https://alexwebv.github.io/hyperdock-landing/assets/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HyperDock — Voice-Powered Terminal for Developers">
+    <meta name="twitter:description" content="Speak commands. Run tasks. Stay in flow. Neon UI, voice Git, AI chat.">
+    <meta name="twitter:image" content="https://alexwebv.github.io/hyperdock-landing/assets/og-cover.png">
+
+    <!-- PWA/brand niceties -->
+    <meta name="theme-color" content="#0a0f1a">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="styles/style.css" as="style">
     <link rel="stylesheet" href="styles/style.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "HyperDock",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "macOS, Windows",
+            "description": "Neon-styled, voice-powered terminal with AI chat, favorites, history and voice Git.",
+            "url": "https://alexwebv.github.io/hyperdock-landing/",
+            "downloadUrl": "https://alexwebv.github.io/hyperdock-landing/#download",
+            "image": "https://alexwebv.github.io/hyperdock-landing/assets/og-cover.png",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            }
+        }
+    </script>
+
+    <!-- FAQPage -->
+    <script type="application/ld+json">
+        {
+            "@context":"https://schema.org",
+            "@type":"FAQPage",
+            "mainEntity":[
+                {
+                    "@type":"Question",
+                    "name":"Does HyperDock work offline?",
+                    "acceptedAnswer":{"@type":"Answer","text":"Core voice features can work locally; AI features require internet."}
+                },
+                {
+                    "@type":"Question",
+                    "name":"Which operating systems are supported?",
+                    "acceptedAnswer":{"@type":"Answer","text":"HyperDock supports macOS and Windows."}
+                },
+                {
+                    "@type":"Question",
+                    "name":"Is there a free plan?",
+                    "acceptedAnswer":{"@type":"Answer","text":"Yes. Free tier is available; Pro and Pro+ add more features."}
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
 
 <!-- Top navbar -->
 <header class="topbar" role="banner">
-    <a class="brand" href="/" aria-label="HyperDock home">
+    <a class="brand" href="./" aria-label="HyperDock home">
         <span class="logo-dot"></span>
         <span>HYPERDOCK</span>
     </a>
